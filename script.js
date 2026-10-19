@@ -425,3 +425,97 @@ document.addEventListener("visibilitychange", () => {
     document.body.classList.remove("page-not-visible");
   }
 });
+
+/* Abre o item do catálogo quando o usuário vem de um dos cartões de destaque. */
+(() => {
+  function openLinkedService() {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    const target = id ? document.getElementById(id) : null;
+    if (target?.matches(".service-detail")) target.open = true;
+  }
+  window.addEventListener("hashchange", openLinkedService);
+  openLinkedService();
+})();
+
+/* Carrossel dos seis serviços em destaque: automático e controlável no mobile. */
+(() => {
+  const grid = document.querySelector(".solutions-grid");
+  const cards = grid ? [...grid.querySelectorAll(".solution-card")] : [];
+  const dots = [...document.querySelectorAll(".solutions-carousel-dot")];
+  const previous = document.querySelector(".solutions-carousel-prev");
+  const next = document.querySelector(".solutions-carousel-next");
+  const mobile = window.matchMedia("(max-width: 820px)");
+  if (!grid || cards.length === 0) return;
+
+  let active = 0;
+  let timer = null;
+  let touchStartX = null;
+
+  function render() {
+    if (mobile.matches) grid.style.transform = `translateX(-${active * 100}%)`;
+    else grid.style.transform = "";
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("is-active", index === active);
+      if (index === active) dot.setAttribute("aria-current", "true");
+      else dot.removeAttribute("aria-current");
+    });
+  }
+  function goTo(index) {
+    active = (index + cards.length) % cards.length;
+    render();
+    restart();
+  }
+  function stop() {
+    if (timer) window.clearInterval(timer);
+    timer = null;
+  }
+  function start() {
+    stop();
+    if (mobile.matches && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      timer = window.setInterval(() => { active = (active + 1) % cards.length; render(); }, 5000);
+    }
+  }
+  function restart() { start(); }
+  previous?.addEventListener("click", () => goTo(active - 1));
+  next?.addEventListener("click", () => goTo(active + 1));
+  dots.forEach((dot, index) => dot.addEventListener("click", () => goTo(index)));
+  grid.addEventListener("touchstart", (event) => { touchStartX = event.changedTouches[0]?.clientX ?? null; }, { passive: true });
+  grid.addEventListener("touchend", (event) => {
+    if (touchStartX === null) return;
+    const delta = (event.changedTouches[0]?.clientX ?? touchStartX) - touchStartX;
+    if (Math.abs(delta) > 45) goTo(active + (delta < 0 ? 1 : -1));
+    touchStartX = null;
+  }, { passive: true });
+  grid.addEventListener("mouseenter", stop);
+  grid.addEventListener("mouseleave", start);
+  mobile.addEventListener?.("change", () => { active = 0; render(); start(); });
+  render();
+  start();
+})();
+
+/* Catálogo mobile: mostra cinco serviços e revela mais cinco por vez. */
+(() => {
+  const catalog = document.querySelector(".service-catalog");
+  const button = document.querySelector(".catalog-more-button");
+  if (!catalog || !button) return;
+  const items = [...catalog.querySelectorAll(".service-detail")];
+  const mobile = window.matchMedia("(max-width: 820px)");
+  let visibleCount = 5;
+
+  function renderCatalog() {
+    if (!mobile.matches) {
+      items.forEach((item) => item.classList.remove("is-batch-hidden"));
+      button.closest(".catalog-more-wrap")?.style.setProperty("display", "none");
+      return;
+    }
+    items.forEach((item, index) => item.classList.toggle("is-batch-hidden", index >= visibleCount));
+    const allVisible = visibleCount >= items.length;
+    button.textContent = allVisible ? "Todos os serviços exibidos" : `Ver mais ${Math.min(5, items.length - visibleCount)} serviços`;
+    button.disabled = allVisible;
+    button.setAttribute("aria-expanded", String(allVisible));
+    button.closest(".catalog-more-wrap")?.style.removeProperty("display");
+  }
+  button.addEventListener("click", () => { visibleCount = Math.min(items.length, visibleCount + 5); renderCatalog(); });
+  mobile.addEventListener?.("change", () => { visibleCount = 5; renderCatalog(); });
+  renderCatalog();
+})();
