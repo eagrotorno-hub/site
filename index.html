@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Torno & Agro — usinagem, fabricação, recuperação e manutenção de peças e equipamentos." />
+    <title>Torno & Agro</title>
+    <link rel="icon" type="image/png" href="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/design-sem-nome-3.png?w=1024&amp;allow_lossy=1" />
+    <link rel="apple-touch-icon" href="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/design-sem-nome-3.png?w=1024&amp;allow_lossy=1" />
+    <link rel="preconnect" href="https://seamless-vid-loop.lovable.app" crossorigin />
+    <link rel="dns-prefetch" href="https://seamless-vid-loop.lovable.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="Torno e Agro — início">
+          <img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro.png" alt="Torno & Agro" />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="main-menu">
+          <a href="#inicio">Início</a>
+          <a href="#estrutura">Soluções</a>
+          <a href="#unidades">Unidades e contato</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#sobre">Sobre</a>
+          <a class="contact-link" href="#unidades">Contato</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-video hero-video-desktop" aria-hidden="true">
+          <iframe data-src="https://seamless-vid-loop.lovable.app/v/edb41e77-618e-44a4-b3d8-56a6beb6dbd7" title="Vídeo institucional Torno &amp; Agro" allow="autoplay; fullscreen" loading="eager"></iframe>
+        </div>
+        <div class="hero-video hero-video-mobile" aria-hidden="true">
+          <iframe data-src="https://seamless-vid-loop.lovable.app/v/e3a13a6b-434f-4c93-852b-71ce6310e515" title="Vídeo Torno &amp; Agro para dispositivos móveis" allow="autoplay; fullscreen" loading="eager"></iframe>
+        </div>
+
+
+        <script>
+          /* Carrega só o vídeo da tela atual, o mais cedo possível, e revela com fade-in */
+          (function () {
+            var mobile = window.matchMedia("(max-width: 820px)").matches;
+            var box = document.querySelector(mobile ? ".hero-video-mobile" : ".hero-video-desktop");
+            if (!box) return;
+            var f = box.querySelector("iframe");
+            var show = function () { box.classList.add("is-loaded"); };
+            f.addEventListener("load", function () { setTimeout(show, 250); });
+            setTimeout(show, 6000);
+            f.setAttribute("fetchpriority", "high");
+            f.src = f.getAttribute("data-src");
+          })();
+        </script>
+
+        <div class="hero-copy">
+          <h1 id="hero-title">Sua máquina parou.<br />Nós colocamos ela de<br />volta a funcionar.</h1>
+          <p>Usinagem, fabricação, recuperação e manutenção de<br class="desktop-break" /> peças e equipamentos agrícolas e industriais. Unidades<br class="desktop-break" /> em Palmas e Gurupi, com atendimento externo em todo o<br class="desktop-break" /> Tocantins.</p>
+
+          <div class="hero-actions" id="contato">
+            <a class="button primary" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" data-whatsapp aria-label="Solicitar orçamento pelo WhatsApp">
+              <img class="whatsapp-icon" src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" aria-hidden="true" />
+              <span>Solicitar orçamento</span>
+            </a>
+            <a class="button secondary" href="#solucoes">Conhecer soluções</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="glow-divider" aria-hidden="true"></div>
+
+      <section class="problems-section" id="solucoes" aria-labelledby="problems-title">
+        <h2 id="problems-title" class="section-title reveal">Reconhece algum desses problemas?</h2>
+
+        <div class="problem-rows problem-rows-desktop">
+          <img
+            class="problem-row reveal"
+            src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-2.png?w=1024&amp;allow_lossy=1"
+            alt="Máquina agrícola parada no meio da safra; peça fora de linha ou impossível de encontrar; eixo, bucha ou mancal desgastado."
+          />
+          <img
+            class="problem-row reveal reveal-delay"
+            src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-3.png"
+            alt="Falha em sistema hidráulico; estrutura metálica quebrada ou danificada; necessidade de uma peça sob medida, sem projeto pronto."
+          />
+        </div>
+
+        <div class="problem-mobile-carousel" aria-roledescription="carrossel" aria-label="Problemas que resolvemos">
+          <div class="problem-mobile-viewport">
+            <div class="problem-mobile-track">
+              <div class="problem-mobile-card"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-11.png?allow_lossy=1" alt="Máquina agrícola parada no meio da safra." /></div>
+              <div class="problem-mobile-card"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-12.png?allow_lossy=1" alt="Peça fora de linha ou impossível de encontrar." /></div>
+              <div class="problem-mobile-card"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-13.png?allow_lossy=1" alt="Eixo, bucha ou mancal desgastado." /></div>
+              <div class="problem-mobile-card"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-14.png?allow_lossy=1" alt="Falha em sistema hidráulico." /></div>
+              <div class="problem-mobile-card"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-15.png?allow_lossy=1" alt="Estrutura metálica quebrada ou danificada." /></div>
+              <div class="problem-mobile-card"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-16.png?allow_lossy=1" alt="Necessidade de uma peça sob medida, sem projeto pronto." /></div>
+            </div>
+          </div>
+          <div class="problem-mobile-dots" aria-label="Selecionar problema">
+            <button class="problem-mobile-dot is-active" type="button" aria-label="Ver problema 1" aria-current="true"></button>
+            <button class="problem-mobile-dot" type="button" aria-label="Ver problema 2"></button>
+            <button class="problem-mobile-dot" type="button" aria-label="Ver problema 3"></button>
+            <button class="problem-mobile-dot" type="button" aria-label="Ver problema 4"></button>
+            <button class="problem-mobile-dot" type="button" aria-label="Ver problema 5"></button>
+            <button class="problem-mobile-dot" type="button" aria-label="Ver problema 6"></button>
+          </div>
+        </div>
+
+        <a class="button primary problems-cta reveal" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" data-whatsapp aria-label="Solicitar atendimento pelo WhatsApp">
+          <img class="whatsapp-icon" src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" aria-hidden="true" />
+          <span>Solicitar atendimento</span>
+        </a>
+      </section>
+
+      <div class="glow-divider second-divider" aria-hidden="true"></div>
+
+      <section class="solutions-section" id="estrutura" aria-labelledby="solutions-title">
+        <header class="solutions-heading reveal">
+          <span class="solutions-eyebrow">O que fazemos</span>
+          <h2 id="solutions-title"><strong>Soluções completas</strong> para o agro e a indústria</h2>
+          <p>Da recuperação de uma peça à fabricação de um projeto completo, reunimos usinagem, corte, dobra, soldagem, balanceamento e fabricação própria para resolver demandas agrícolas e industriais.</p>
+        </header>
+
+        <div class="solutions-grid">
+          <article class="solution-card reveal">
+            <span class="solution-number">01</span>
+            <h3>Usinagem Industrial</h3>
+            <p class="solution-lead">Fabricação e recuperação de peças sob medida para máquinas e equipamentos.</p>
+            <ul><li>Torneamento, fresagem e plaina</li><li>Eixos, pinos e buchas</li><li>Peças por desenho ou amostra</li></ul>
+            <a class="solution-button" href="#servico-01">Ver serviços</a>
+          </article>
+          <article class="solution-card reveal reveal-delay">
+            <span class="solution-number">02</span>
+            <h3>Corte, Dobra e Fabricação</h3>
+            <p class="solution-lead">Processos de fabricação metálica para peças, estruturas e projetos personalizados.</p>
+            <ul><li>Corte a laser</li><li>Dobra CNC, calandra e guilhotina</li><li>Soldagem MIG/MAG, TIG e laser</li></ul>
+            <a class="solution-button" href="#servico-02">Ver serviços</a>
+          </article>
+          <article class="solution-card reveal">
+            <span class="solution-number">03</span>
+            <h3>Soluções para Máquinas Agrícolas</h3>
+            <p class="solution-lead">Recuperação e fabricação para pulverizadores, colheitadeiras e implementos.</p>
+            <ul><li>Reformas e recuperação estrutural</li><li>Peças e conjuntos agrícolas</li><li>Roscas e transporte de grãos</li></ul>
+            <a class="solution-button" href="#servico-06">Ver serviços</a>
+          </article>
+          <article class="solution-card reveal reveal-delay">
+            <span class="solution-number">04</span>
+            <h3>Balanceamento Dinâmico</h3>
+            <p class="solution-lead">Balanceamento em dois planos para reduzir vibrações em componentes rotativos.</p>
+            <ul><li>Rotores e picadores</li><li>Rolos e conjuntos rotativos</li><li>Atendimento na empresa ou em campo</li></ul>
+            <a class="solution-button" href="#servico-05">Ver serviços</a>
+          </article>
+          <article class="solution-card reveal">
+            <span class="solution-number">05</span>
+            <h3>Implementos e Projetos Sob Medida</h3>
+            <p class="solution-lead">Desenvolvimento de implementos, peças e soluções para cada operação.</p>
+            <ul><li>Implementos para máquinas pesadas</li><li>Estruturas e peças especiais</li><li>Projetos a partir de desenho ou necessidade</li></ul>
+            <a class="solution-button" href="#servico-10">Ver serviços</a>
+          </article>
+          <article class="solution-card reveal reveal-delay">
+            <span class="solution-number">06</span>
+            <h3>Atendimento em Campo</h3>
+            <p class="solution-lead">Serviços realizados na fazenda ou operação quando o equipamento não pode ser deslocado.</p>
+            <ul><li>Soldagem e reparos</li><li>Manutenção agrícola externa</li><li>Ajustes e adaptações no local</li></ul>
+            <a class="solution-button" href="#servico-15">Ver serviços</a>
+          </article>
+        </div>
+        <div class="solutions-carousel-controls" aria-label="Controles das soluções em destaque">
+          <button class="solutions-carousel-arrow solutions-carousel-prev" type="button" aria-label="Solução anterior">‹</button>
+          <div class="solutions-carousel-dots" aria-label="Selecionar solução">
+            <button type="button" class="solutions-carousel-dot is-active" aria-label="Ver solução 1" aria-current="true"></button>
+            <button type="button" class="solutions-carousel-dot" aria-label="Ver solução 2"></button>
+            <button type="button" class="solutions-carousel-dot" aria-label="Ver solução 3"></button>
+            <button type="button" class="solutions-carousel-dot" aria-label="Ver solução 4"></button>
+            <button type="button" class="solutions-carousel-dot" aria-label="Ver solução 5"></button>
+            <button type="button" class="solutions-carousel-dot" aria-label="Ver solução 6"></button>
+          </div>
+          <button class="solutions-carousel-arrow solutions-carousel-next" type="button" aria-label="Próxima solução">›</button>
+        </div>
+
+        <div class="catalog-intro reveal" id="catalogo">
+          <div>
+            <span class="solutions-eyebrow">Portfólio completo</span>
+            <h3>Encontre a solução para sua necessidade</h3>
+            <p>Explore as especialidades e os serviços da Torno &amp; Agro. Se não encontrar exatamente o que procura, fale com nossa equipe para avaliarmos sua demanda.</p>
+          </div>
+          <a class="button primary catalog-whatsapp" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" data-whatsapp>
+            <img class="whatsapp-icon" src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" aria-hidden="true" />
+            <span>Consultar um serviço</span>
+          </a>
+        </div>
+
+        <div class="service-catalog" aria-label="Catálogo completo de serviços">
+          <details class="service-detail reveal" id="servico-01">
+            <summary><span class="detail-number">01</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/usinagem-industrial-20261020-202558-d76ca9.png?w=200&amp;allow_lossy=1" alt="Usinagem Industrial" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Usinagem Industrial</span><span class="detail-subtitle">Peças, componentes e usinagem sob medida</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Fabricação, recuperação e ajuste de peças para máquinas e equipamentos agrícolas e industriais, a partir de amostra, medidas, desenho técnico ou necessidade específica.</p><ul><li>Torneamento, fresagem e plaina</li><li>Fabricação de eixos, pinos e buchas</li><li>Recuperação de eixos</li><li>Usinagem de peças especiais</li><li>Fabricação sob desenho ou amostra</li><li>Usinagem pesada e peças de grande porte</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-02">
+            <summary><span class="detail-number">02</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/corte-a-laser-20261020-202619-eb427d.png?w=200&amp;allow_lossy=1" alt="Corte a Laser" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Corte a Laser</span><span class="detail-subtitle">Precisão em aço carbono e inox</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Corte de precisão para peças, chapas, componentes e projetos personalizados, do item individual a projetos completos.</p><ul><li>Peças agrícolas e industriais</li><li>Chapas e componentes</li><li>Flanges e suportes</li><li>Painéis e divisórias</li><li>Peças personalizadas</li><li>Projetos de engenharia e arquitetura</li><li>Fabricação a partir de desenho técnico</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-03">
+            <summary><span class="detail-number">03</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/dobra-cnc-conformacao-chapas-20261020-202640-689896.png?w=200&amp;allow_lossy=1" alt="Dobra CNC e Conformação de Chapas" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Dobra CNC e Conformação de Chapas</span><span class="detail-subtitle">Conformação para diferentes formatos</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>A estrutura permite realizar dobra de chapas de até 10 mm de espessura e 3 metros de comprimento.</p><ul><li>Dobra CNC</li><li>Calandra</li><li>Guilhotina</li><li>Conformação e fabricação de peças dobradas</li><li>Projetos personalizados</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-04">
+            <summary><span class="detail-number">04</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/soldagem-fabricacao-20261020-202854-cb9590.png?w=200&amp;allow_lossy=1" alt="Soldagem e Fabricação" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Soldagem e Fabricação</span><span class="detail-subtitle">Fabricação, montagem e recuperação</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Processos de soldagem para desenvolver, montar e recuperar componentes agrícolas e industriais.</p><ul><li>Solda a laser</li><li>Solda MIG/MAG</li><li>Solda TIG</li><li>Soldagem de aço carbono e inox</li><li>Fabricação e recuperação de componentes</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-05">
+            <summary><span class="detail-number">05</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/balanceamento-dinamico-20261020-202902-d7ccd9.png?w=200&amp;allow_lossy=1" alt="Balanceamento Dinâmico" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Balanceamento Dinâmico</span><span class="detail-subtitle">Redução de vibração em componentes rotativos</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Balanceamento dinâmico em dois planos para corrigir desbalanceamentos. Atendimento em campo ou dentro da empresa, conforme a aplicação.</p><ul><li>Rotores</li><li>Picadores</li><li>Rolos</li><li>Componentes rotativos agrícolas e industriais</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-06">
+            <summary><span class="detail-number">06</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/recuperacao-maquinas-agricolas-20261020-202910-9f0915.png?w=200&amp;allow_lossy=1" alt="Recuperação de Máquinas e Componentes Agrícolas" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Recuperação de Máquinas e Componentes Agrícolas</span><span class="detail-subtitle">Recuperação, reforço e alinhamento</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Recuperação de componentes desgastados ou danificados para devolver condições de trabalho ao equipamento e, quando tecnicamente possível, evitar a substituição completa da peça.</p><ul><li>Pulverizadores e colheitadeiras</li><li>Implementos agrícolas e pá-carregadeira</li><li>Componentes e estruturas agrícolas</li><li>Recuperação, reforço, alinhamento e embuchamento</li><li>Fabricação de componentes</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-07">
+            <summary><span class="detail-number">07</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/pulverizadores-20261020-203053-3043d5.png?w=200&amp;allow_lossy=1" alt="Pulverizadores" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Pulverizadores</span><span class="detail-subtitle">Reforma, modificação e recuperação de barras</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><ul><li>Embuchamento completo de barras e quadros</li><li>Reforma completa de barras</li><li>Fabricação de barras em alumínio reforçadas</li><li>Conversão de barras de 28 para 30 metros</li><li>Fabricação de pinos e buchas especiais</li><li>Reforma de articulação das pernas</li><li>Alinhamento e recuperação estrutural</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-08">
+            <summary><span class="detail-number">08</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/colheitadeiras-20261020-203059-6a2876.png?w=300&amp;allow_lossy=1" alt="Colheitadeiras" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Colheitadeiras</span><span class="detail-subtitle">Peças e conjuntos para colheita</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><ul><li>Centro de caracol e rosca helicoidal</li><li>Rolo alimentador e rolo garganta</li><li>Recuperação de picadores</li><li>Balanceamento de rotores</li><li>Reforma de plataformas</li><li>Recuperação de cano bazuca</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-09">
+            <summary><span class="detail-number">09</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/roscas-helicoidais-transporte-graos-20261020-203107-58e0ce.png?w=200&amp;allow_lossy=1" alt="Roscas Helicoidais e Transporte de Grãos" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Roscas Helicoidais e Transporte de Grãos</span><span class="detail-subtitle">Fabricação e recuperação para movimentação de grãos</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Soluções sob medida conforme equipamento, dimensão e aplicação.</p><ul><li>Roscas helicoidais e transportadoras</li><li>Caracóis e chupins</li><li>Elevadores e transportadores</li><li>Reforma de sistemas existentes</li><li>Componentes para silos, bazucas e colheitadeiras</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-10">
+            <summary><span class="detail-number">10</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/implementos-agricolas-fabricacao-sob-medida-20261020-203231-dccbf3.png?w=200&amp;allow_lossy=1" alt="Implementos Agrícolas e Fabricação Sob Medida" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Implementos Agrícolas e Fabricação Sob Medida</span><span class="detail-subtitle">Acessórios feitos para a máquina e a operação</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><ul><li>Caçambas e conchas especiais</li><li>Garfos e garfo enleirador</li><li>Garra florestal</li><li>Adaptadores e engates rápidos</li><li>Estruturas metálicas</li><li>Implementos personalizados</li></ul><p>O cliente pode apresentar uma necessidade, peça, medida ou projeto para avaliação da equipe.</p></div>
+          </details>
+          <details class="service-detail reveal" id="servico-11">
+            <summary><span class="detail-number">11</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/implementos-pa-carregadeira-maquinas-pesadas-20261020-203249-df53ad.png?w=200&amp;allow_lossy=1" alt="Implementos para Pá-Carregadeira e Máquinas Pesadas" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Implementos para Pá-Carregadeira e Máquinas Pesadas</span><span class="detail-subtitle">Acessórios para diferentes operações</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><ul><li>Engate rápido hidráulico e mecânico</li><li>Garra para madeira</li><li>Pega-bag</li><li>Garfo para pallet</li><li>Conchas reforçadas e graneleiras</li><li>Lâmina hidráulica</li><li>Implementos especiais sob medida</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-12">
+            <summary><span class="detail-number">12</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/hidraulica-manutencao-componentes-20261020-203308-a7766e.png?w=200&amp;allow_lossy=1" alt="Hidráulica" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Hidráulica</span><span class="detail-subtitle">Fabricação e recuperação de componentes hidráulicos</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><ul><li>Recuperação de cilindros</li><li>Fabricação de hastes</li><li>Recuperação de eixos</li><li>Fabricação de buchas especiais e pinos</li><li>Componentes sob medida</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-13">
+            <summary><span class="detail-number">13</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/fabricacao-aco-inox-20261020-203438-d37c0d.png?w=200&amp;allow_lossy=1" alt="Fabricação em Aço Inox" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Fabricação em Aço Inox</span><span class="detail-subtitle">Equipamentos e estruturas para uso industrial</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><ul><li>Tanques misturadores e tanques em inox 304</li><li>Bancadas e cubas industriais</li><li>Pias industriais</li><li>Reservatórios e tubulações</li><li>Estruturas em inox</li><li>Projetos especiais</li></ul></div>
+          </details>
+          <details class="service-detail reveal" id="servico-14">
+            <summary><span class="detail-number">14</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/projetos-especiais-fabricacao-20261020-203456-0c2a36.png?w=200&amp;allow_lossy=1" alt="Projetos Especiais e Fabricação Sob Medida" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Projetos Especiais e Fabricação Sob Medida</span><span class="detail-subtitle">Da necessidade ao projeto fabricado</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Desenvolvimento de projetos agrícolas e industriais que podem integrar usinagem, corte, dobra, soldagem e montagem.</p><p>Podemos trabalhar a partir de desenho técnico, projeto de engenharia, peça existente, medidas ou necessidade específica da operação.</p></div>
+          </details>
+          <details class="service-detail reveal" id="servico-15">
+            <summary><span class="detail-number">15</span><img class="detail-thumb" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/manutencao-em-campo-20261020-203515-2a408c.png?w=200&amp;allow_lossy=1" alt="Atendimento e Manutenção em Campo" width="110" height="110" loading="lazy" decoding="async" /><span class="detail-title">Atendimento e Manutenção em Campo</span><span class="detail-subtitle">Serviços no local de operação</span><span class="detail-plus" aria-hidden="true"></span></summary>
+            <div class="detail-content"><p>Equipe preparada para realizar determinados serviços diretamente na fazenda ou local de operação, reduzindo a necessidade de deslocamento do equipamento.</p><ul><li>Manutenção agrícola em campo</li><li>Soldagem em fazendas</li><li>Recuperações emergenciais</li><li>Ajustes e reparos</li><li>Fabricação e adaptação no local</li><li>Atendimento a máquinas e implementos agrícolas</li></ul></div>
+          </details>
+        </div>
+        <div class="catalog-more-wrap">
+          <button class="button secondary catalog-more-button" type="button" aria-expanded="false">Ver mais serviços</button>
+        </div>
+      </section>
+
+      <section class="why-section" id="diferenciais" aria-labelledby="why-title">
+        <h2 class="why-title reveal" id="why-title">
+          <span>Por que escolher a</span>
+          <strong>Torno e Agro?</strong>
+        </h2>
+
+        <div class="why-grid">
+          <img class="why-card reveal" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-17.png" alt="Estrutura completa." />
+          <img class="why-card reveal" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-18.png" alt="Atendimento externo." />
+          <img class="why-card reveal" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-19.png" alt="Soluções sob medida." />
+          <img class="why-card reveal" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-20.png" alt="Tecnologia de ponta." />
+          <img class="why-card reveal" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-21.png" alt="Equipe especializada." />
+          <img class="why-card reveal" src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-22.png" alt="Agilidade." />
+        </div>
+
+        <a class="button primary why-cta reveal" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" data-whatsapp aria-label="Falar com nosso time especializado pelo WhatsApp">
+          <img class="whatsapp-icon" src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" aria-hidden="true" />
+          <span>Fale com nosso time especializado</span>
+        </a>
+      </section>
+
+      <div class="dark-divider" aria-hidden="true"></div>
+
+      <section class="sectors-section" id="setores" aria-label="Setores atendidos pela Torno &amp; Agro">
+        <div class="sectors-marquee" aria-hidden="true">
+          <div class="sectors-marquee-track">
+            <span>Agronegócio e fazendas</span><span>Indústrias e agroindústrias</span><span>Metalúrgicas</span><span>Máquinas agrícolas</span><span>Saneamento</span><span>Construção civil</span><span>Mineração</span><span>Alimentício (inox)</span><span>Empresas públicas</span><span>Energia e infraestrutura</span><span>Transportadoras</span><span>Máquinas pesadas</span>
+            <span>Agronegócio e fazendas</span><span>Indústrias e agroindústrias</span><span>Metalúrgicas</span><span>Máquinas agrícolas</span><span>Saneamento</span><span>Construção civil</span><span>Mineração</span><span>Alimentício (inox)</span><span>Empresas públicas</span><span>Energia e infraestrutura</span><span>Transportadoras</span><span>Máquinas pesadas</span>
+            <span>Agronegócio e fazendas</span><span>Indústrias e agroindústrias</span><span>Metalúrgicas</span><span>Máquinas agrícolas</span><span>Saneamento</span><span>Construção civil</span><span>Mineração</span><span>Alimentício (inox)</span><span>Empresas públicas</span><span>Energia e infraestrutura</span><span>Transportadoras</span><span>Máquinas pesadas</span>
+            <span>Agronegócio e fazendas</span><span>Indústrias e agroindústrias</span><span>Metalúrgicas</span><span>Máquinas agrícolas</span><span>Saneamento</span><span>Construção civil</span><span>Mineração</span><span>Alimentício (inox)</span><span>Empresas públicas</span><span>Energia e infraestrutura</span><span>Transportadoras</span><span>Máquinas pesadas</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-locations-section" id="unidades" aria-labelledby="contact-locations-title">
+        <header class="contact-locations-heading reveal">
+          <span class="solutions-eyebrow">Estamos por perto</span>
+          <h2 id="contact-locations-title">Unidades, <strong>contato e atendimento</strong></h2>
+          <p>Entre em contato para solicitar um orçamento ou encontrar a unidade mais conveniente para você.</p>
+        </header>
+
+        <div class="units-grid contact-units-grid">
+          <article class="unit-card reveal">
+            <div class="unit-map"><iframe title="Mapa da região da unidade de Palmas, Tocantins" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.4925851521757!2d-48.311739599999996!3d-10.2217979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b33a764201b83%3A0x43226880266b2c4d!2sTorno%20e%20Agro!5e0!3m2!1spt-BR!2sbr!4v1792427988581!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="unit-content">
+              <h3>Unidade de Palmas, TO</h3>
+              <p>Consulte a localização exata pelo mapa da unidade.</p>
+              <a href="https://maps.app.goo.gl/wopDGHgf7JBCy8XD6" target="_blank" rel="noopener noreferrer" aria-label="Abrir a localização exata da unidade de Palmas no Google Maps">Como chegar pelo Google Maps ↗</a>
+            </div>
+          </article>
+          <article class="unit-card reveal reveal-delay">
+            <div class="unit-map"><iframe title="Mapa da região da unidade de Gurupi, Tocantins" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.662080943336!2d-49.0778479!3d-11.7183291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933e95ae30d3ea33%3A0x47f0eef491d81bb6!2sTorno%20e%20Agro%20%7C%20Gurupi!5e0!3m2!1spt-BR!2sbr!4v1792428026869!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="unit-content">
+              <h3>Unidade de Gurupi, TO</h3>
+              <p>Consulte a localização exata pelo mapa da unidade.</p>
+              <a href="https://maps.app.goo.gl/gum3hrR8CDk7EUBe9" target="_blank" rel="noopener noreferrer" aria-label="Abrir a localização exata da unidade de Gurupi no Google Maps">Como chegar pelo Google Maps ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="contact-info-grid">
+          <article class="contact-info-card reveal">
+            <span class="contact-info-icon" aria-hidden="true"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/3.png?w=1024&amp;allow_lossy=1" alt="" loading="lazy" /></span>
+            <h3>Fale com a nossa equipe</h3>
+            <a class="contact-phone" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer">(63) 99953-8274</a>
+            <p>Orçamentos, dúvidas e solicitações de atendimento.</p>
+            <a class="button primary" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer"><img class="whatsapp-icon" src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" aria-hidden="true" /><span>Chamar no WhatsApp</span></a>
+          </article>
+          <article class="contact-info-card reveal reveal-delay">
+            <span class="contact-info-icon" aria-hidden="true"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/10/2.png?w=1024&amp;allow_lossy=1" alt="" loading="lazy" /></span>
+            <h3>Horário de atendimento</h3>
+            <p><strong>Segunda a sexta</strong><br />8h às 18h</p>
+            <p><strong>Sábado</strong><br />8h às 12h</p>
+            <p class="contact-muted">Domingos e feriados: consulte a equipe.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials-section" aria-label="Comentários de clientes">
+        <div class="testimonials-grid">
+          <h2 class="testimonials-title reveal">O que dizem<br /><strong>nossos clientes?</strong></h2>
+          <div class="testimonials-carousel reveal reveal-delay" aria-live="polite" aria-label="Comentários de clientes">
+            <article class="testimonial-card is-active" aria-hidden="false">
+              <header><span class="testimonial-avatar" aria-hidden="true">J</span><div><b>Jeferson Marçal</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Eficiente e com qualidade no serviço.”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">G</span><div><b>Gabriel Barbosa de Sousas</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Gostei muito. Equipe bem qualificada, dentro do prazo dos serviços, boa qualidade na fabricação e um bom atendimento. A Torno & Agro está de parabéns! 👏👏👏”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">C</span><div><b>Cleiton Sousa</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“A melhor empresa da região. Top!”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">M</span><div><b>Maykel Rodrigo Machado de Oliveira Silva</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Super indico. Excelente trabalho!”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">D</span><div><b>Darley Barbosa dos Santos</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Acabamento excelente, nota 10.”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">J</span><div><b>Jesiel Alisson</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Serviço de qualidade e prazo de entrega.”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">J</span><div><b>João Vitor Sá de Sousa</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“A melhor!”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">F</span><div><b>Ferro Velho do César</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Serviços de qualidade. 👍”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">P</span><div><b>Paulo Henrique</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Top demais, excelente atendimento. O Élder nos ajudou muito, até em um domingo de Dia dos Pais. Abraço!”</blockquote>
+            </article>
+            <article class="testimonial-card" aria-hidden="true">
+              <header><span class="testimonial-avatar" aria-hidden="true">G</span><div><b>Gedson Silva Cardoso</b><span aria-label="5 estrelas">★★★★★</span></div></header>
+              <blockquote>“Excelentes serviços e atendimento de qualidade.”</blockquote>
+            </article>
+            <div class="testimonial-dots" aria-label="Selecionar comentário">
+              <button class="testimonial-dot is-active" type="button" aria-label="Ver comentário 1" aria-current="true"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 2"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 3"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 4"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 5"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 6"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 7"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 8"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 9"></button>
+              <button class="testimonial-dot" type="button" aria-label="Ver comentário 10"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="sobre" aria-labelledby="about-section-title">
+        <h2 class="about-kicker reveal" id="about-section-title">Quem somos nós?</h2>
+        <div class="about-grid">
+          <div class="about-video reveal">
+            <iframe src="https://seamless-vid-loop.lovable.app/v/edb41e77-618e-44a4-b3d8-56a6beb6dbd7" title="Vídeo institucional da Torno &amp; Agro" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <div class="about-copy reveal reveal-delay">
+            <h3>Estrutura sólida,<br />compromisso com<br />o cliente</h3>
+            <p>A Torno e Agro nasceu para oferecer soluções completas em usinagem, manutenção e fabricação de peças para os setores <b>agrícola, industrial e de construção.</b> Investimos continuamente em tecnologia e equipe para consolidar unidades em <b>Palmas e Gurupi.</b></p>
+            <p>Hoje atendemos desde reparos técnicos até grandes projetos, sempre com foco em <b>agilidade, precisão e soluções personalizadas.</b></p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <h2 id="faq-title" class="reveal">Perguntas Frequentes</h2>
+        <div class="faq-list reveal">
+          <details class="faq-item"><summary>Vocês fabricam peças a partir de amostras?<span>+</span></summary><p>Sim. Analisamos a amostra, levantamos as medidas e fabricamos a peça conforme a aplicação necessária.</p></details>
+          <details class="faq-item"><summary>Recuperam peças que não são mais encontradas no mercado?<span>+</span></summary><p>Sim. Avaliamos a viabilidade de recuperação ou produzimos uma nova peça sob medida.</p></details>
+          <details class="faq-item"><summary>Fazem atendimento direto em fazendas e indústrias?<span>+</span></summary><p>Sim. Nossa equipe realiza atendimento externo em fazendas, indústrias e obras.</p></details>
+          <details class="faq-item"><summary>Fazem manutenção preventiva?<span>+</span></summary><p>Sim. Criamos rotinas preventivas para reduzir falhas inesperadas e tempo de máquina parada.</p></details>
+          <details class="faq-item"><summary>Quais materiais vocês trabalham?<span>+</span></summary><p>Trabalhamos com aços, inox, alumínio, bronze, polímeros técnicos e outros materiais conforme o projeto.</p></details>
+          <details class="faq-item"><summary>Atendem fora do Tocantins?<span>+</span></summary><p>Consulte nossa equipe para avaliarmos a localização, o serviço e a melhor forma de atendimento.</p></details>
+        </div>
+      </section>
+
+      <section class="instagram-section" id="instagram" aria-labelledby="instagram-title">
+        <header class="instagram-heading reveal">
+          <span class="solutions-eyebrow">Acompanhe nosso trabalho</span>
+          <h2 id="instagram-title">A Torno &amp; Agro <strong>no Instagram</strong></h2>
+          <p>Veja novidades, serviços e um pouco do nosso dia a dia.</p>
+          <a class="button primary instagram-follow" href="https://www.instagram.com/torno_agro/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt="" aria-hidden="true" /><span>Seguir @torno_agro</span></a>
+        </header>
+        <div class="instagram-embed-wrap reveal reveal-delay">
+          <iframe src="https://www.instagram.com/torno_agro/embed" title="Perfil da Torno &amp; Agro no Instagram" loading="lazy" allowtransparency="true" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="footer-brand" href="#inicio" aria-label="Torno e Agro — início"><img src="https://tornoeagro.wordpress.com/wp-content/uploads/2026/07/desktop-tornoagro-1.png?w=1024&amp;allow_lossy=1" alt="Torno & Agro" /></a>
+        <nav class="footer-links" aria-label="Navegação do rodapé">
+          <div><a href="#inicio">Início</a><a href="#estrutura">Soluções</a><a href="#catalogo">Todos os serviços</a><a href="#estrutura">Estrutura</a></div>
+          <div><a href="#instagram">Instagram</a><a href="#sobre">Sobre</a><a href="#unidades">Contato</a></div>
+        </nav>
+        <div class="footer-social">
+          <a href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" data-whatsapp><img src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" />WhatsApp · (63) 99953-8274</a>
+          <a href="https://www.instagram.com/torno_agro/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt="" />Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Torno &amp; Agro. Todos os direitos reservados.</div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://api.whatsapp.com/send/?phone=5563999538274&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer" data-whatsapp aria-label="Falar com a Torno e Agro pelo WhatsApp">
+      <img src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" aria-hidden="true" />
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
